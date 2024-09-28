@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Question number 1 -->
+    <h1 id="area"></h1>
+
+    <script>
+      function calculateArea(a, b, c,){
+        var result= a*b*c
+       return result
+      }
+      var result = calculateArea(5, 6, 1/2)
+      document.getElementById("area").innerHTML ="Given sides 5, 6, 7 the total area of a triangle is: "+ result;
+    </script>
+
+     <!-- Question number 2 -->
+<script>
+    function Calculator() {
+        let num1 = document.getElementById("number1").value;
+        let num2 = document.getElementById("number2").value;
+
+       let mult = num1 * num2;
+       let div = num1 / num2;
+
+        document.getElementById("multresult").innerHTML="Multiplication is: "+ mult;
+        document.getElementById("divresult").innerHTML= "Division is; "+ div;
+    }
+</script>
+
+ 
+<h2>multiplication and division calculate</h2>
+
+<input type="number" id="number1"><br> <br>
+<input type="number" id="number2"><br> <br>
+<div> <button type="button" onclick="Calculator()">Result</button></div><br>
+<p id="multresult"></p>
+<p id="divresult"></p>
+
+
+ <!-- Question number 3 -->
+  <script>
+    function addsting(str){
+        var originalsting = "Javascript "
+        return originalsting + str
+    }
+     var x =addsting()
+     console.log(addsting("is exiting."))
+  </script>
+
+
+
+  
+</body>
+</html>
