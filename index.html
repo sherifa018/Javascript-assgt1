@@ -9,24 +9,20 @@
 <body>
 
     <!-- Question number 1 -->
-    <h1 id="area"></h1>
-
+    <h1 id="demo"></h1>
     <script>
-      function calculateArea(a=5, b=6, c=7,){
-        var  s = (a + b + c)/2.
-        return s
-        var area= (s * (s - a) * (s - b) * (s - c))
-       return area
-      }
+        function calculateArea(a, b, c) {
+            var s = (a+b+c)/2 ;
+            var s =9;
+            var area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+            return area
+           
+        }
 
-      let a = 5;
-let b = 6;
-let c = 7;
-var area = calculateArea(5, 6, 7);
-console.log("The area of the triangle is: " + area);
-      var area = calculateArea((s * (s - a) * (s - b) * (s - c)))
-      document.getElementById("area").innerHTML ="Given sides 5, 6, 7 the total area of a triangle is: "+ area;
-    </script>
+        var x= calculateArea(5, 6, 7)
+        document.getElementById("demo").innerHTML ="Given sides 5, 6, 7 the total area of a triangle is: "+x
+        console.log("Total area is"+x)
+
 
      <!-- Question number 2 -->
 <script>
